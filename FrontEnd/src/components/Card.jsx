@@ -1,0 +1,11 @@
+const Card = ({ header, footer, children, onClick }) => (
+  <div className="custom-card" onClick={onClick}>
+    {header && <header>{header}</header>}
+    <main>
+      {children}
+    </main>
+    {footer && <footer>{footer}</footer>}
+  </div>
+);
+
+export default Card;
